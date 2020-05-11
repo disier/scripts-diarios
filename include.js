@@ -110,8 +110,6 @@ function noAplicaNinguno() {
     }, 400);
 }
 
-buscarlosTodos();
-
-
+//buscarlosTodos();
 
 
