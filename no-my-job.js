@@ -1,3 +1,17 @@
+//////////////////////////////////////////
+// "Not-my-job script 2020
+//
+// Modo de empleo:
+//
+// 1. Logarse en atDesk con Google Chrome
+// 2. Entrar en la bandeja de tareas
+// 3. abrir el  Menu -> More Tools -> Developer Tools
+// 4. Ir a la pestaña Console
+// 5. Copiar todo este código y pegarlo en la consola
+// 6. Ver progreso que se va mostrando en la consola. Sigue funcionando aunque la pèsña se vaya quedando en blanco
+//////////////////////////////////////////
+
+
 function enableContextMenu(aggressive = true) {
     void (document.ondragstart = null);
     void (document.onselectstart = null);
@@ -82,9 +96,9 @@ function buscarlosTodos(){
 }
 
 function noAplicaNinguno() {
-    console.log('Quedan ' + $("td:contains('Por favor, evalÃºa')").length + ' evaluaciones');
+    console.log('Quedan ' + $("td:contains('Por favor, evalúa')").length + ' evaluaciones');
 
-    $($("td:contains('Por favor, evalÃºa')")[0]).click();
+    $($("td:contains('Por favor, evalúa')")[0]).click();
 
     setTimeout( function() {
         $("button[title='Abrir tarea']").click();
@@ -110,6 +124,7 @@ function noAplicaNinguno() {
     }, 400);
 }
 
-//buscarlosTodos();
+// Lanza el script
+buscarlosTodos();
 
 

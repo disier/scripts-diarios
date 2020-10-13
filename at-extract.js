@@ -1,9 +1,9 @@
-var LAST_TIME_MARK = null;
-var RETRIEVED_DATA = null;
+let LAST_TIME_MARK = null;
+let RETRIEVED_DATA = null;
 
-var DATA = new Object();
+let DATA = new Object();
 
-var atExtract = class atExtract{
+let atExtract = class atExtract{
 
 	static ping(){
 		console.log('Ping()');
@@ -49,7 +49,7 @@ var atExtract = class atExtract{
 			$('#log').html( JSON.stringify(data, null, '\t'));
 
 
-			var headers = {
+			let headers = {
 					"idRest": "idRest",
 					"usuarioCambio": "usuarioCambio",
 					"fechaCambioRest": "fechaCambioRest",
